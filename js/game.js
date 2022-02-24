@@ -143,43 +143,6 @@ class Game {
   
 
 
-    if (index - 1 === 1) {
-      console.log("Player 2");
-
-      if (
-        bikes[index - 1].collide(bikes[0]) ||
-        bikes[index - 1].collide(bikes[2]) ||
-        bikes[index - 1].collide(bikes[3])
-      ) {
-        player.blast = true;
-        player.update();
-      }
-    }
-
-    if (index - 1 === 2) {
-      console.log("Player 3");
-
-      if (
-        bikes[index - 1].collide(bikes[0]) ||
-        bikes[index - 1].collide(bikes[1]) ||
-        bikes[index - 1].collide(bikes[3])
-      ) {
-        player.blast = true;
-        player.update();
-      }
-    }
-
-    if (index - 1 === 3) {
-      console.log("Player 4");
-      if (
-        bikes[index - 1].collide(bikes[0]) ||
-        bikes[index - 1].collide(bikes[1]) ||
-        bikes[index - 1].collide(bikes[2])
-      ) {
-        player.blast = true;
-        player.update();
-      }
-    }
   }
 
   end() {
